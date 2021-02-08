@@ -1,0 +1,7 @@
+.ui.cards>.card>.image {
+    background: none;
+}
+
+.ui.card>.content, .ui.cards>.card>.content {
+    border-top: none;
+}
