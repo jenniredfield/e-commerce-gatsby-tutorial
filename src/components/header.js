@@ -1,20 +1,23 @@
-import './header.css'
+import '../styles/header.css'
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+// import FlowerLogo from '../images/flower.png';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `1.45rem`,
     }}
-    className="background"
+    className="header-container"
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.2rem`,
+        display: 'flex',
+        justifyContent: 'space-between'
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -28,6 +31,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div>
+        {/* <img src={FlowerLogo} alt="Flower Logo" className="header-logo"></img> */}
+      </div>
     </div>
   </header>
 )

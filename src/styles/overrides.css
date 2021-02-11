@@ -1,7 +1,45 @@
+.ui.cards {
+    justify-content: space-between;
+}
+
 .ui.cards>.card>.image {
     background: none;
+    border-radius: 0;
 }
 
 .ui.card>.content, .ui.cards>.card>.content {
     border-top: none;
+    padding: 10px 0;
 }
+
+.ui.card, .ui.cards>.card {
+    box-sizing: border-box;
+    width: calc(50% - 20px);
+    border-radius: 0 !important;
+    margin: 12px 5px;
+    box-shadow: none;
+}
+
+/** Ipad **/
+@media only screen and (min-width: 768px) {
+    /* .ui.card, .ui.cards>.card {
+        width: calc(40% - 20px);
+        margin: 12px 5px;
+    } */
+  }
+
+/** Desktop **/
+@media only screen and (min-width: 1024px) {
+    .ui.card, .ui.cards>.card  {
+        width: calc(33% - 20px);
+        margin: 12px 5px;
+    }
+  }
+
+/** Desktop Large **/
+@media only screen and (min-width: 1440px) {
+    .ui.card, .ui.cards>.card  {
+        width: calc(25% - 20px);
+        margin: 12px 5px;
+    }
+  }

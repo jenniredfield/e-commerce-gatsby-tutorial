@@ -34,7 +34,7 @@ const IndexPage = () => {
         <p>Loja em Conselheiro Lafaiete</p>
       </div>
 
-      <Card.Group itemsPerRow={3} stackable>
+      <Card.Group >
         {products.map(product => {
           const nodeData = data && data.allFile ? data.allFile.edges.find(item => item.node.name === product.image) : undefined;
           const imageData = nodeData && nodeData.node ? nodeData.node : {}
