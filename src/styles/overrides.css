@@ -20,6 +20,14 @@
     box-shadow: none;
 }
 
+#gatsby-focus-wrapper,
+#___gatsby  {
+    min-height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
 /** Ipad **/
 @media only screen and (min-width: 768px) {
     /* .ui.card, .ui.cards>.card {

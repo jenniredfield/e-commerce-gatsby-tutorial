@@ -1,11 +1,12 @@
-export const products = [
+module.exports = [
     {
         name: 'Vestido Azul',
         category: 'Vestido',
         price: 'R$10.00',
         image: 'fino-brecho-13',
         tamanho: 'M',
-        id: 'fino-brecho-13'
+        id: 'vestido-azul-1',
+        slug: '/vestido-azul-1'
     },
     {
         name: 'Vestido Beige',
@@ -13,7 +14,8 @@ export const products = [
         price: 'R$70.00',
         image: 'fino-brecho-18',
         tamanho: 'M',
-        id: 'fino-brecho-18'
+        id: 'vestido-beige-1',
+        slug: '/vestido-beige-1'
     },
     {
         name: 'Vestido Azul',
@@ -21,7 +23,8 @@ export const products = [
         price: 'R$10.00',
         image: 'fino-brecho-24',
         tamanho: 'M',
-        id: 'fino-brecho-24'
+        id: 'vestido-azul-2',
+        slug: '/vestido-azul-2'
     },
     {
         name: 'Camisa Branca',
@@ -29,7 +32,8 @@ export const products = [
         price: 'R$10.00',
         image: 'fino-brecho-28',
         tamanho: 'M',
-        id: 'fino-brecho-28'
+        id: 'camisa-branca-1',
+        slug: '/camisa-branca-1'
     },
     {
         name: 'Vestido Azul',
@@ -37,7 +41,8 @@ export const products = [
         price: 'R$10.00',
         image: 'fino-brecho-13',
         tamanho: 'M',
-        id: 'fino-brecho-13'
+        id: 'vestido-azul-1',
+        slug: '/vestido-azul-1'
     },
     {
         name: 'Vestido Beige',
@@ -45,7 +50,8 @@ export const products = [
         price: 'R$70.00',
         image: 'fino-brecho-18',
         tamanho: 'M',
-        id: 'fino-brecho-18'
+        id: 'vestido-beige-1',
+        slug: '/vestido-beige-1'
     },
     {
         name: 'Vestido Azul',
@@ -53,7 +59,8 @@ export const products = [
         price: 'R$10.00',
         image: 'fino-brecho-24',
         tamanho: 'M',
-        id: 'fino-brecho-24'
+        id: 'vestido-azul-2',
+        slug: '/vestido-azul-2'
     },
     {
         name: 'Camisa Branca',
@@ -61,6 +68,8 @@ export const products = [
         price: 'R$10.00',
         image: 'fino-brecho-28',
         tamanho: 'M',
-        id: 'fino-brecho-28'
-    },
+        id: 'camisa-branca-1',
+        slug: '/camisa-branca-1'
+    }
 ]
+

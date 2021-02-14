@@ -2,7 +2,6 @@ import '../styles/header.css'
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-// import FlowerLogo from '../images/flower.png';
 
 const Header = ({ siteTitle }) => (
   <header

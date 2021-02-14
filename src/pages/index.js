@@ -1,6 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/overrides.css'
 import '../styles/description.css'
+import products from '../data/products';
 import React from "react"
 
 import Layout from "../components/layout"
@@ -8,8 +9,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, Image } from 'semantic-ui-react'
 
-import { products } from '../data/products';
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 
 const IndexPage = () => {
 
@@ -41,6 +41,7 @@ const IndexPage = () => {
     
           return (
             <Card key={product.id}>
+              <Link to={product.slug}>
               <Image src={imageData.publicURL} wrapped ui={false} />
               <Card.Content>
                 <Card.Header>{product.name}</Card.Header>
@@ -49,6 +50,7 @@ const IndexPage = () => {
                   <p>{product.price}</p>
                 </Card.Description>
               </Card.Content>
+              </Link>
             </Card>
           )
         })}
