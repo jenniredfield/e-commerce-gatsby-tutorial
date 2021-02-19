@@ -1,5 +1,5 @@
 .ui.cards {
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .ui.cards>.card>.image {
@@ -16,13 +16,13 @@
     box-sizing: border-box;
     width: calc(50% - 20px);
     border-radius: 0 !important;
-    margin: 12px 0.7rem;
+    margin: 12px 5px;
     box-shadow: none;
 }
 
 #gatsby-focus-wrapper,
 #___gatsby  {
-    min-height: 100vh !important;
+    min-height: 100% !important;
     width: 100% !important;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
 @media only screen and (min-width: 1024px) {
     .ui.card, .ui.cards>.card  {
         width: calc(33% - 20px);
-        margin: 12px 0.8rem;
+        margin: 12px 5px;
     }
   }
 
@@ -48,6 +48,6 @@
 @media only screen and (min-width: 1440px) {
     .ui.card, .ui.cards>.card  {
         width: calc(25% - 20px);
-        margin: 12px 0.7rem;
+        margin: 12px 5px;
     }
   }
