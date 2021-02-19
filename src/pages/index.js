@@ -9,40 +9,24 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, Image } from 'semantic-ui-react'
 
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 const IndexPage = () => {
-
-  const data = useStaticQuery(graphql`
-  {
-    allFile(filter: {sourceInstanceName: {eq: "productImages"}}) {
-      edges {
-        node {
-          name
-          publicURL
-        }
-      }
-    }
-  }
-`)
 
   return (
     <Layout>
       <SEO title="Home" />
 
       <div className="site-description">
-        <p>Loja em Conselheiro Lafaiete</p>
+        <p>O Fino do Brechó uma loja de requinte nos tempos modernos onde tudo deve ser reaproveitado e reciclado. Trabalhamos para servir as pessoas que sonham em adquirir peças de grifes famosas e de qualidade com valor acessível para todos os bolsos.</p>
       </div>
 
       <Card.Group >
         {products.map(product => {
-          const nodeData = data && data.allFile ? data.allFile.edges.find(item => item.node.name === product.image) : undefined;
-          const imageData = nodeData && nodeData.node ? nodeData.node : {}
-    
           return (
             <Card key={product.id}>
               <Link to={product.slug}>
-              <Image src={imageData.publicURL} wrapped ui={false} />
+              <Image src={product.image} wrapped ui={false} />
               <Card.Content>
                 <Card.Header>{product.name}</Card.Header>
                 <Card.Description>
